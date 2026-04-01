@@ -10,7 +10,7 @@ DENSE_RANK() OVER (ORDER BY salary DESC ) as Rank_num
 FROM Employee
 )
 SELECT 
-MAX(salary) as SecondHighestSalary
+MAX(salary) as getNthHighestSalary
 FROM CTE 
 Where rank_num = N
   );
